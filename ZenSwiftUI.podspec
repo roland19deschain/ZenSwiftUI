@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'ZenSwiftUI'
-  spec.version          = '1.0.2'
+  spec.version          = '1.0.3'
   spec.swift_version    = '5.0'
   spec.summary          = 'ZenSwiftUI is a collection of views, extensions and functions for SwiftUI framework.'
   spec.description      = <<-DESC
