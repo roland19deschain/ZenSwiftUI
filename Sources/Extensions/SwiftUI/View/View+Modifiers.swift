@@ -19,4 +19,16 @@ public extension View {
 		)
 	}
 	
+	/// Calls the `action` whenever device orientation changes.
+	/// - Parameters:
+	///   - action: The action to call whenever device orientation changes.
+	/// - Returns: A modified `View` instance with the observer attached.
+	func onRotate(
+		_ action: @escaping (UIDeviceOrientation) -> Void
+	) -> some View {
+		modifier(
+			DeviceRotationViewModifier(action: action)
+		)
+	}
+	
 }
