@@ -7,11 +7,14 @@ public extension Color {
 		opacity: Double = 1,
 		colorSpace: RGBColorSpace = .sRGB
 	) {
+		let red: UInt = (hex >> 16) & 0xFF
+		let green: UInt = (hex >> 8) & 0xFF
+		let blue: UInt = hex & 0xFF
 		self.init(
 			colorSpace,
-			red: Double((hex >> 16) & 0xFF) / 255,
-			green: Double((hex >> 8) & 0xFF) / 255,
-			blue: Double(hex & 0xFF) / 255,
+			red: Double(red) / 255,
+			green: Double(green) / 255,
+			blue: Double(blue) / 255,
 			opacity: opacity
 		)
 	}
