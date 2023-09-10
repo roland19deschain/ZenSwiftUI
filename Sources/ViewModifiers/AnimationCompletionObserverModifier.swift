@@ -16,7 +16,8 @@ public struct AnimationCompletionObserverModifier<Value>: AnimatableModifier whe
 	// MARK: - Stored Properies - Private
 	
 	/// The target value for which we're observing. This value is directly set once the animation starts.
-	/// During animation, `animatableData` will hold the oldValue and is only updated to the target value once the animation completes.
+	/// During animation, `animatableData` will hold the oldValue and is only
+	/// updated to the target value once the animation completes.
 	private var targetValue: Value
 	private var completion: () -> Void
 	
@@ -39,7 +40,8 @@ public struct AnimationCompletionObserverModifier<Value>: AnimatableModifier whe
 	// MARK: - ViewModifier
 	
 	public func body(content: Content) -> some View {
-		// We're not really modifying the view so we can directly return the original input value.
+		// We're not really modifying the view
+		// so we can directly return the original input value.
 		content
 	}
 	
@@ -54,7 +56,8 @@ private extension AnimationCompletionObserverModifier {
 			return
 		}
 		// Dispatching is needed to take the next runloop for the completion callback.
-		// This prevents errors like "Modifying state during view update, this will cause undefined behavior."
+		// This prevents errors like "Modifying state during view update,
+		// this will cause undefined behavior."
 		DispatchQueue.main.async {
 			self.completion()
 		}
