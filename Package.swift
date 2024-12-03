@@ -1,11 +1,10 @@
-// swift-tools-version: 5.7
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version: 5.10
 
 import PackageDescription
 
 let package = Package(
 	name: "ZenSwiftUI",
-	platforms: [.iOS(.v14)],
+	platforms: [.iOS(.v16)],
 	products: [
 		.library(
 			name: "ZenSwiftUI",
@@ -18,15 +17,7 @@ let package = Package(
 		.target(
 			name: "ZenSwiftUI",
 			dependencies: [],
-			path: "Sources/",
-			swiftSettings: [
-//				.unsafeFlags([
-//					"-Xfrontend",
-//					"-warn-long-function-bodies=50",
-//					"-Xfrontend",
-//					"-warn-long-expression-type-checking=50"
-//				])
-			]
+			path: "Sources/"
 		),
 		.testTarget(
 			name: "ZenSwiftUITests",
