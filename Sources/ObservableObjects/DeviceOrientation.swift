@@ -13,12 +13,10 @@ public final class DeviceOrientation: ObservableObject {
 	
 	public init() {
 		orientation = UIDevice.current.orientation
-		
 		listener = NotificationCenter.default.publisher(
 			for: UIDevice.orientationDidChangeNotification
 		).compactMap {
 			($0.object as? UIDevice)?.orientation
-			
 		}.assign(to: \.orientation, on: self)
 	}
 	

@@ -12,11 +12,17 @@ let package = Package(
 			targets: ["ZenSwiftUI"]
 		)
 	],
-	dependencies: [],
+	dependencies: [
+		.package(url: "https://github.com/roland19deschain/ZenSwift", from: "2.1.15"),
+		.package(url: "https://github.com/roland19deschain/ZenUIKit", from: "2.1.7")
+	],
 	targets: [
 		.target(
 			name: "ZenSwiftUI",
-			dependencies: [],
+			dependencies: [
+				.product(name: "ZenSwift", package: "zenswift"),
+				.product(name: "ZenUIKit", package: "zenuikit"),
+			],
 			path: "Sources/"
 		),
 		.testTarget(

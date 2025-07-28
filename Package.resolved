@@ -1,0 +1,33 @@
+{
+  "originHash" : "b6e90b2a36b6cde6599f7ccee95494bcd9011f5dfb50fcaf26c36749a6509047",
+  "pins" : [
+    {
+      "identity" : "zencoregraphics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/roland19deschain/ZenCoreGraphics",
+      "state" : {
+        "revision" : "4c75675c610163a47efbb0bfaa14882eb6d2b3e0",
+        "version" : "2.0.2"
+      }
+    },
+    {
+      "identity" : "zenswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/roland19deschain/ZenSwift.git",
+      "state" : {
+        "revision" : "8e7a22dab37347f8bb3a4faafc5dda5967349047",
+        "version" : "2.1.15"
+      }
+    },
+    {
+      "identity" : "zenuikit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/roland19deschain/ZenUIKit",
+      "state" : {
+        "revision" : "730440d73232a8da83eae00e312d336d2273993d",
+        "version" : "2.1.8"
+      }
+    }
+  ],
+  "version" : 3
+}
