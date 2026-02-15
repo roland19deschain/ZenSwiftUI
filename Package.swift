@@ -1,10 +1,10 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 6.2
 
 import PackageDescription
 
 let package = Package(
 	name: "ZenSwiftUI",
-	platforms: [.iOS(.v16)],
+	platforms: [.iOS(.v26)],
 	products: [
 		.library(
 			name: "ZenSwiftUI",
@@ -14,7 +14,7 @@ let package = Package(
 	],
 	dependencies: [
 		.package(url: "https://github.com/roland19deschain/ZenSwift", from: "2.1.15"),
-		.package(url: "https://github.com/roland19deschain/ZenUIKit", from: "2.1.7")
+		.package(url: "https://github.com/roland19deschain/ZenUIKit", from: "2.5.0")
 	],
 	targets: [
 		.target(
@@ -31,5 +31,5 @@ let package = Package(
 			path: "Tests/"
 		)
 	],
-	swiftLanguageVersions: [.v5]
+	swiftLanguageModes: [.v6]
 )

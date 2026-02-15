@@ -1,5 +1,5 @@
 {
-  "originHash" : "b6e90b2a36b6cde6599f7ccee95494bcd9011f5dfb50fcaf26c36749a6509047",
+  "originHash" : "6cc27e401d4202a2f3f12e2eb93231e5bd03502c8592a6b8153e83ad7dea8b42",
   "pins" : [
     {
       "identity" : "zencoregraphics",
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/roland19deschain/ZenUIKit",
       "state" : {
-        "revision" : "730440d73232a8da83eae00e312d336d2273993d",
-        "version" : "2.1.8"
+        "revision" : "04ac5e283da2c81e3f971d8c1826fac9f23f4998",
+        "version" : "2.5.0"
       }
     }
   ],
